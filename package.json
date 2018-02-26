@@ -1,0 +1,66 @@
+{
+  "name": "mimist",
+  "version": "1.0.0",
+  "description": "Mimis try to better herself",
+  "author": {
+    "name": "Mimi Lundberg",
+    "email": "mimilundberg@fransbernhard",
+    "url": "http://fransbernhard.com"
+  },
+  "main": "app.js",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fransbernhard/mimist"
+  },
+  "engines": {
+    "node": "8.9.0"
+  },
+  "scripts": {
+    "dev": "rimraf build-dev && NODE_ENV=development webpack --config=webpack/config.dev.js && node ./public/server/server.js",
+    "prebuild": "rimraf build",
+    "build": "yarn build:client && yarn build:server",
+    "build:client": "NODE_ENV=production webpack -p --progress --config=webpack/config.prod.js",
+    "build:server": "copyfiles -a -u 1 public/server/**/**/* build"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
+    "babel-watch": "*",
+    "copyfiles": "^1.2.0",
+    "cross-env": "*",
+    "css-loader": "*",
+    "extract-text-webpack-plugin": "*",
+    "html-loader": "*",
+    "html-webpack-harddisk-plugin": "^0.1.0",
+    "html-webpack-plugin": "*",
+    "node-sass": "*",
+    "postcss-loader": "*",
+    "rimraf": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "uglifyjs-webpack-plugin": "*",
+    "webpack": "3.10.0",
+    "webpack-dev-middleware": "*",
+    "webpack-hot-middleware": "*",
+    "webpack-merge": "*"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "compression": "*",
+    "express": "*",
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-hot-loader": "*",
+    "react-redux": "*",
+    "react-router-dom": "*",
+    "react-router-redux": "*",
+    "redux": "*",
+    "winston": "*"
+  }
+}
