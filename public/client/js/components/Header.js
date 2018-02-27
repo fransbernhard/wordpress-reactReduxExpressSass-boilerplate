@@ -6,7 +6,7 @@ class Header extends Component {
     return(
       <header>
         <nav>
-          <ul>
+          <ul className="menu-ul">
             <li><Link to={'/'}>Home</Link></li>
             <li><Link to={"/about"}>About</Link></li>
           </ul>

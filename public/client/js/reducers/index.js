@@ -1,5 +1,9 @@
 import { FETCH_REQUEST, FETCH_SUCCESS } from "../action-types/constants";
 
+const initialState = {
+  articles: []
+};
+
 const reducer = (state = {}, action) => {
   switch (action.type) {
     case FETCH_REQUEST:
@@ -10,3 +14,5 @@ const reducer = (state = {}, action) => {
       return state;
   }
 }
+
+export default reducer;

@@ -5,3 +5,8 @@ header {
   background: pink;
   @include flexCenterCenter;
 }
+
+.menu-ul {
+  width: 30vw;
+  @include flexCenterSB;
+}
