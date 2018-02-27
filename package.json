@@ -40,6 +40,7 @@
     "html-webpack-harddisk-plugin": "^0.1.0",
     "html-webpack-plugin": "*",
     "node-sass": "*",
+    "open": "^0.0.5",
     "postcss-loader": "*",
     "rimraf": "*",
     "sass-loader": "*",
@@ -63,6 +64,7 @@
     "react-router-dom": "*",
     "react-router-redux": "*",
     "redux": "*",
+    "redux-thunk": "^2.2.0",
     "winston": "*"
   }
 }

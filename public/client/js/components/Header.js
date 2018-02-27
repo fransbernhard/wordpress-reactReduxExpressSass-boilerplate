@@ -5,7 +5,12 @@ class Header extends Component {
   render(){
     return(
       <header>
-        <h1>HEADER MENU NAV</h1>
+        <nav>
+          <ul>
+            <li><Link to={'/'}>Home</Link></li>
+            <li><Link to={"/about"}>About</Link></li>
+          </ul>
+        </nav>
       </header>
     );
   }

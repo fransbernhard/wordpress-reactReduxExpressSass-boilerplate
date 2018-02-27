@@ -2,6 +2,7 @@ const http = require('http');
 const express = require('express');
 const bodyParser = require('body-parser');
 const setupApiRoutes = require('./middlewares/api');
+const open = require('open');
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 process.env.HTTP_PORT = process.env.HTTP_PORT || 8080;
@@ -19,6 +20,11 @@ setupApiRoutes(app);
 setupAppRoutes(app);
 
 // http.createServer creates a server on your computer
-http.createServer(app).listen(process.env.HTTP_PORT, () => {
-  console.log("runnin on: " + process.env.HTTP_PORT)
+http.createServer(app).listen(process.env.HTTP_PORT, (err) => {
+  if(err){
+    console.log(err);
+  } else {
+    console.log("runnin on: " + process.env.HTTP_PORT)
+    open(`http://localhost:${process.env.HTTP_PORT}`)
+  }
 });
