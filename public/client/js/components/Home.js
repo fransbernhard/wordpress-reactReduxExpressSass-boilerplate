@@ -3,6 +3,7 @@ import Header from './Header.js';
 import Footer from './Footer.js';
 
 import image from '../../img/bg.png';
+import video from '../../img/Desert_Storm.mp4';
 
 class Home extends Component {
 
@@ -16,6 +17,9 @@ class Home extends Component {
             <h1>I AM HOME CONTENT</h1>
             <img className="img" src={image} />
             <div className="test_bg"></div>
+            <video autoPlay muted loop id="myVideo">
+              <source src={video} type="video/mp4"/>
+            </video>
           </div>
         </div>
         <Footer/>

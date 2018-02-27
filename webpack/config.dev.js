@@ -42,7 +42,18 @@ const config = merge(commonConfig, {
             // name: './img/[name].[ext]'
           }
 			  }]
-			}
+			},
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]'
+            }
+          }
+        ]
+      }
     ]
   },
   plugins: plugins

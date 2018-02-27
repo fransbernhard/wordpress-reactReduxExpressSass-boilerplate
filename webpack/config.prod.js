@@ -10,7 +10,7 @@ const config = merge(commonConfig, {
   module: {
     rules: [
       {
-			  test: /\.(png|jpg|gif)$/,
+			  test: /\.(png|jpg|gif|mov|mp4)$/,
 			  use: [{
 					loader: 'file-loader',
 					options: {
