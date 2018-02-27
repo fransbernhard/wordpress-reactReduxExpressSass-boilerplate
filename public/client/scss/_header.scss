@@ -1,5 +1,7 @@
 header {
+  position: fixed;
+  width: 100vw;
   padding: 1rem;
-  background: darkgrey;
-  width: 100%;
+  background: pink;
+  @include flexCenterCenter;
 }

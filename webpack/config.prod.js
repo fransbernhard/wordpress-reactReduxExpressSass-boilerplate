@@ -7,6 +7,19 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const commonConfig = require('./config.common');
 
 const config = merge(commonConfig, {
+  module: {
+    rules: [
+      {
+			  test: /\.(png|jpg|gif)$/,
+			  use: [{
+					loader: 'file-loader',
+					options: {
+						name: './img/[name].[ext]'
+					}
+				}]
+			},
+    ]
+  },
   plugins: [
     new UglifyJsPlugin({
       parallel: true,

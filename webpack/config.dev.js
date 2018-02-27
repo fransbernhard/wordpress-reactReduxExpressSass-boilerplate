@@ -30,6 +30,21 @@ const config = merge(commonConfig, {
     hotUpdateChunkFilename: 'hot-update.[hash:6].js'
   },
   devtool: 'cheap-module-eval-source-map',
+  // devtool: "inline-source-map",
+  module: {
+    rules: [
+      {
+			  test: /\.(png|jpg|gif)$/,
+			  use: [{
+			    loader: 'url-loader',
+          options: {
+            limit: 15000
+            // name: './img/[name].[ext]'
+          }
+			  }]
+			}
+    ]
+  },
   plugins: plugins
 })
 

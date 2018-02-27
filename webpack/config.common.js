@@ -7,8 +7,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const IS_DEV = process.env.NODE_ENV !== 'production';
 
 const output = {
-  publicPath: '/',
   path: resolve(__dirname, '..', 'build', 'client'),
+  publicPath: '/',
   filename: '[name].js'
 }
 
@@ -38,9 +38,9 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: ['babel-loader'],
-        exclude: /node_modules/
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
       },
       {
         test: /\.html$/,
@@ -68,15 +68,6 @@ const config = {
   					}
   		    ]
   		  })
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [{
-        	loader: 'file-loader',
-        	options: {
-        		name: '[path][name].[ext]'
-        	}
-        }]
       }
     ]
   },

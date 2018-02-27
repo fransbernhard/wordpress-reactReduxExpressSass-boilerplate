@@ -5,9 +5,7 @@ class Header extends Component {
   render(){
     return(
       <header>
-        <nav>
-          <h1>HEADER MENU NAV</h1>
-        </nav>
+        <h1>HEADER MENU NAV</h1>
       </header>
     );
   }

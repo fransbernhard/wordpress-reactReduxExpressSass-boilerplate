@@ -1,6 +1,17 @@
-.home-content {
-  h1 {
-    padding: 4rem;
-    background: pink;
-  }
+.home-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: green;
+  @include flexCenterCenter;
+}
+
+.img {
+  max-width: 200px;
+}
+
+.test_bg {
+  width: 200px;
+	height: 200px;
+  background: url(img/bg.png) no-repeat center center scroll;
+  background-size: cover;
 }
