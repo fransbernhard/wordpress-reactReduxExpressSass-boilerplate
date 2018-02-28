@@ -37,4 +37,6 @@ or
 $ npm run build
 ```
 
-Thank for guidance [tahnik](https://github.com/tahnik/react-expressjs/)
+Special thanks to:
+
+[tahnik](https://github.com/tahnik/react-expressjs/)
