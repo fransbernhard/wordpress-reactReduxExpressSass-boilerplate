@@ -64,6 +64,7 @@
     "react-router-dom": "*",
     "react-router-redux": "*",
     "redux": "*",
+    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "winston": "*"
   }

@@ -28,8 +28,7 @@ const config = merge(commonConfig, {
     hotUpdateMainFilename: 'hot-update.[hash:6].json',
     hotUpdateChunkFilename: 'hot-update.[hash:6].js'
   },
-  devtool: 'cheap-module-eval-source-map',
-  // devtool: "inline-source-map",
+  devtool: 'cheap-module-source-map',
   module: {
     rules: [
       {

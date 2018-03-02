@@ -5,10 +5,37 @@
   box-sizing: border-box;
 }
 
-a:focus, button:focus {
+a:focus, button:focus, input:focus {
   outline:0 !important;
 }
 
 li {
   list-style: none;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+  margin: 1rem;
+  border-radius: 50%;
+  background: pink;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:active {
+  background: darkgrey;
+}
+
+#countNr {
+  color: pink;
+}
+
+.counterbox {
+  background: rgba(0,0,0,0.6);
+  padding: 2rem;
+  @include flexColumnCenterCenter;
+  border-radius: 4px;
 }
