@@ -2,15 +2,6 @@
 
 import * as types from "../action-types/constants";
 
-let nextTodoId = 0;
-export const addTodo = text => {
-  return {
-    type: types.ADD_TODO,
-    id: nextTodoId++,
-    text
-  }
-}
-
 export const increment = () => {
   return {
     type: types.INCREMENT

@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
-import Header from './Header.js';
-import Footer from './Footer.js';
+import Header from './common/Header.js';
+import Footer from './common/Footer.js';
 import Counter from './Counter.js';
 
 class About extends Component {

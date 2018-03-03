@@ -7,7 +7,6 @@ class Counter extends Component {
 
   increment = () => {
     this.props.dispatch({ type: INCREMENT });
-    // console.log("INCREMENT: " + this.props.count.count);
   }
 
   decrement = () => {

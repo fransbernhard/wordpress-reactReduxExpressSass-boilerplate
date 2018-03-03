@@ -53,6 +53,7 @@
     "webpack-merge": "*"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "*",
     "compression": "*",
     "express": "*",
@@ -66,6 +67,7 @@
     "redux": "*",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
+    "request": "^2.83.0",
     "winston": "*"
   }
 }

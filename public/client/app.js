@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {render} from 'react-dom';
 import {
     BrowserRouter as Router,
@@ -11,11 +11,11 @@ import Home from './js/components/Home.js';
 import About from './js/components/About.js';
 import Archive from './js/components/Archive.js';
 
-import { Provider } from "react-redux";
+import { Provider } from "react-redux"; // make the store available to all container components in the application without passing it explicitly
 import store from "./js/store/index";
 
-// Provider:  magically make the store available to all container components in the application without passing it explicitly
 const App = () => {
+
   return (
     <Provider store={store}>
       <Router>
@@ -30,10 +30,6 @@ const App = () => {
   )
 }
 
-render (<App/>, document.getElementById('app'))
+render(<App/>, document.getElementById('app'))
 
-if (module.hot) {
-	module.hot.accept();
-}
-
-// export default App;
+if (module.hot) { module.hot.accept() }

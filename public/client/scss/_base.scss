@@ -39,3 +39,15 @@ li {
   @include flexColumnCenterCenter;
   border-radius: 4px;
 }
+
+.img-class {
+  max-width: 200px;
+}
+
+.post-li {
+  @include flexColumnCenterCenter;
+}
+
+.post-ul {
+  @include flexCenterCenter;
+}
