@@ -13,9 +13,6 @@
     "type": "git",
     "url": "https://github.com/fransbernhard/mimist"
   },
-  "engines": {
-    "node": "8.9.0"
-  },
   "scripts": {
     "dev": "rimraf build-dev && NODE_ENV=development webpack --config=webpack/config.dev.js && node ./public/server/server.js",
     "prebuild": "rimraf build",
@@ -32,7 +29,6 @@
     "babel-preset-stage-0": "*",
     "babel-watch": "*",
     "copyfiles": "^1.2.0",
-    "cross-env": "*",
     "css-loader": "*",
     "extract-text-webpack-plugin": "*",
     "file-loader": "^1.1.10",
@@ -48,12 +44,11 @@
     "uglifyjs-webpack-plugin": "*",
     "url-loader": "^0.6.2",
     "webpack": "3.10.0",
-    "webpack-dev-middleware": "*",
+    "webpack-dev-middleware": "2.0",
     "webpack-hot-middleware": "*",
     "webpack-merge": "*"
   },
   "dependencies": {
-    "axios": "^0.18.0",
     "body-parser": "*",
     "compression": "*",
     "express": "*",

@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 
-// An express-style development middleware for use with webpack bundles and allows for serving of the files emitted from webpack.
+// Express-style dev middleware for use with webpack bundles and allows for serving of the files emitted from webpack.
 // * Ex: If files changed in watch mode, the middleware delays requests until compiling has completed.
 // * No files are written to disk, rather it handles files in memory
 // * Supports hot module reload (HMR).
