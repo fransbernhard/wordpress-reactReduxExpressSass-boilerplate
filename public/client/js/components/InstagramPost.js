@@ -3,15 +3,23 @@ import { connect } from "react-redux";
 
 class InstagramPost extends Component {
   render() {
-    console.log("PROPS: " + this.props.info);
+    console.log(this.props.info);
+    this.props.info.map((p,i) => {
+      console.log("PROPS ID: " + p.id);
+    })
+    this.props.info.forEach(function(el) {
+      console.log("ELEMENT: " + el.id);
+    });
 
     return (
       <div>
-        <h1>Min instao</h1>
+        <h1>POSTS</h1>
         <ul className="uls">
-          {Object.keys(this.props.info).map((inf, i) => {
-            <li key={i}>{inf.id}</li>
-          })}
+          {
+            this.props.info.map((inf, i) =>
+              <li key={i}>{inf.userId}</li>
+            )
+          }
         </ul>
       </div>
     )
