@@ -8,6 +8,8 @@ A boilerplate to use the Wordpress REST API and buils SPA with ReactJS, ExpressJ
 - [Webpack](https://webpack.js.org/) - The module binder which takes all your JS files from different directories and compiles them into a single app.bundle.js so you can include it in a HTML page
 - [ExpressJS](https://expressjs.com/) - The node framework to serve your views to the world when they hit the server at example.com or example.com/awesome.html
 - [Wordpress REST API](https://developer.wordpress.org/rest-api/) - The WordPress REST API that provides API endpoints for WordPress data types that allow developers to interact with sites remotely by sending and receiving JSON (JavaScript Object Notation) objects.
+- [GIT REST API](https://developer.github.com/v3/) - Get JSON data from GIT
+- [Instagram API](https://www.instagram.com/developer/) - Get JSON data from Instagram
 
 ## Installation
 *Project requires Node.js v6+ to run.*
