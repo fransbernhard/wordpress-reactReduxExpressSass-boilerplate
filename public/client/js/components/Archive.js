@@ -1,6 +1,4 @@
 import React , {Component} from 'react';
-import Header from './common/Header.js';
-import Footer from './common/Footer.js';
 import Post from './Post.js';
 import Pages from './Pages.js';
 
@@ -47,18 +45,14 @@ class Archive extends Component {
 
   render(){
     return (
-      <div>
-        <Header/>
-        <div className="bg">
-          <div className="home-wrapper">
-            <h1>AAAARCHIVE</h1>
-            <Post products={this.state.products} />
-            <Pages pages={this.state.pages} />
-          </div>
+      <div className="bg">
+        <div className="home-wrapper">
+          <h1>AAAARCHIVE</h1>
+          <Post products={this.state.products} />
+          <Pages pages={this.state.pages} />
         </div>
-        <Footer/>
       </div>
-    );
+    )
   }
 }
 

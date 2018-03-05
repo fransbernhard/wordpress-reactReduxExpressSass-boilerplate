@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 class Post extends Component {
-
 	render(){
 	  return (
       <ul className="post-ul">

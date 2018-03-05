@@ -51,3 +51,8 @@ li {
 .post-ul {
   @include flexCenterCenter;
 }
+
+.container {
+  @include fullSizeWH;
+  @include flexColumnCenterCenter;
+}

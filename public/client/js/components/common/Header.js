@@ -10,6 +10,7 @@ class Header extends Component {
             <li><Link to={'/'}>Home</Link></li>
             <li><Link to={"/about"}>About</Link></li>
             <li><Link to={"/archive"}>Archive</Link></li>
+            <li><Link to={"/instagram"}>Instagram</Link></li>
           </ul>
         </nav>
       </header>

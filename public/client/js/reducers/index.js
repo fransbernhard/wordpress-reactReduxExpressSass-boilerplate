@@ -3,10 +3,12 @@
 import { combineReducers } from 'redux'
 import posts from './posts'
 import count from './count'
+import infoReducer from './info'
 
 const mimiApp = combineReducers({
   posts,
-  count
+  count,
+  info: infoReducer
 })
 
 export default mimiApp;
